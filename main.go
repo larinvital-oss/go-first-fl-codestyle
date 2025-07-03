@@ -21,7 +21,6 @@ func attack(charName, charClass string) string {
 	return "неизвестный класс персонажа"
 }
 
-// обратите внимание на "if else" и на "else"
 func defence(char_name, char_class string) string {
 	if char_class == "warrior" {
 		return fmt.Sprintf("%s блокировал %d урона.", char_name, 10+randint(5, 10))
@@ -39,7 +38,6 @@ func defence(char_name, char_class string) string {
 
 }
 
-// обратите внимание на "if else" и на "else"
 func special(charName, charClass string) string {
 	if charClass == "warrior" {
 		return fmt.Sprintf("%s применил специальное умение `Выносливость %d`", charName, 80+25)
@@ -57,7 +55,6 @@ func special(charName, charClass string) string {
 
 }
 
-// здесь обратите внимание на имена параметров
 func startTraining(charName, charClass string) string {
 	if charClass == "warrior" {
 		fmt.Printf("%s, ты Воитель - отличный боец ближнего боя.\n", charName)
@@ -98,7 +95,6 @@ func startTraining(charName, charClass string) string {
 	return "тренировка окончена"
 }
 
-// обратите внимание на имя функции и имена переменных
 func choiseCharClass() string {
 	var approveChoise string
 	var charClass string
@@ -109,11 +105,9 @@ func choiseCharClass() string {
 		if charClass == "warrior" {
 			fmt.Println("Воитель — дерзкий воин ближнего боя. Сильный, выносливый и отважный.")
 		}
-
 		if charClass == "mage" {
 			fmt.Println("Маг — находчивый воин дальнего боя. Обладает высоким интеллектом.")
 		}
-
 		if charClass == "healer" {
 			fmt.Println("Лекарь — могущественный заклинатель. Черпает силы из природы, веры и духов.")
 		}
@@ -124,7 +118,6 @@ func choiseCharClass() string {
 	return charClass
 }
 
-// обратите внимание на имена переменных
 func main() {
 	fmt.Println("Приветствую тебя, искатель приключений!")
 	fmt.Println("Прежде чем начать игру...")
